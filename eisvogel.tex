@@ -530,8 +530,11 @@ $endif$
 
 
 %%
-%% added
+%% Automatically add a clear page before section
 %%
+
+\let\oldsection\section
+\renewcommand\section{\clearpage\oldsection}
 
 %
 % language specification
